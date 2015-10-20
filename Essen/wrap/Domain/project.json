@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0-*",
+  "frameworks": {
+    "net46": {
+      "wrappedProject": "../../Domain/Domain.csproj",
+      "bin": {
+        "assembly": "../../Domain/obj/{configuration}/Domain.dll",
+        "pdb": "../../Domain/obj/{configuration}/Domain.pdb"
+      },
+      "dependencies": {
+        "EntityFramework": "6.1.3"
+      }
+    }
+  }
+}
