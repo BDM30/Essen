@@ -1,5 +1,7 @@
-﻿using Moq;
-using Xunit;
+﻿using Xunit;
+using Essen.Controllers;
+using Tests.CrudControllers;
+using Essen.Models.Entities;
 
 // Facts are tests which are always true. They test invariant conditions.
 // Theories are tests which are only true for a particular set of data.
@@ -13,7 +15,17 @@ namespace Tests
     [Fact]
     public void can_get_data()
     {
-      
+      // Arrange - create a controller with a mock repository
+      UserController target = new UserController(new UserRepositoryMock());
+
+      // Action
+      User[] result = target.Get().ToArray();
+
+      // Assert
+      Assert.AreEqual(result.Length, 3);
+      Assert.AreEqual(1, result[0].UserID);
+      Assert.AreEqual(2, result[1].UserID);
+      Assert.AreEqual(3, result[2].UserID);
     }
 
     [Fact]
