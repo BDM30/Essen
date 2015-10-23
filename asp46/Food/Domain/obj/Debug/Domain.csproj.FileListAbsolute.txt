@@ -12,3 +12,17 @@ C:\Users\stars_000\Desktop\s123\Project\271\Food\Domain\obj\Debug\Domain.csproj.
 C:\Users\stars_000\Desktop\s123\Project\271\Food\Domain\obj\Debug\Domain.Migrations.AddedAllEntities.resources
 C:\Users\stars_000\Desktop\s123\Project\271\Food\Domain\obj\Debug\Domain.Migrations.AddedShortNameFieldToUnitMeasure.resources
 C:\Users\stars_000\Desktop\s123\Project\271\Food\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\bin\Debug\Domain.dll.config
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\bin\Debug\Domain.dll
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\bin\Debug\Domain.pdb
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\bin\Debug\EntityFramework.dll
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\bin\Debug\EntityFramework.xml
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\obj\Debug\Domain.Migrations.InitialCreate.resources
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\obj\Debug\Domain.Migrations.AddedAllEntities.resources
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\obj\Debug\Domain.Migrations.AddedShortNameFieldToUnitMeasure.resources
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\obj\Debug\Domain.csproj.GenerateResource.Cache
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\obj\Debug\Domain.dll
+C:\Users\stars_000\Desktop\s123\Project\Essen\asp46\Food\Domain\obj\Debug\Domain.pdb

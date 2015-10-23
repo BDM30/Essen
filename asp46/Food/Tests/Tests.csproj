@@ -93,13 +93,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="EntityControllers\CategoryControllerTest.cs" />
-    <Compile Include="EntityControllers\IngredientControllerTest.cs" />
-    <Compile Include="EntityControllers\ProductControllerTest.cs" />
-    <Compile Include="EntityControllers\RecipeControllerTest.cs" />
-    <Compile Include="EntityControllers\UnitMeasureControllerTest.cs" />
-    <Compile Include="EntityControllers\UserProductControllerTest.cs" />
-    <Compile Include="EntityControllers\UserControllerTest.cs" />
+    <Compile Include="UserControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

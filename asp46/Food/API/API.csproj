@@ -154,14 +154,8 @@
     <Compile Include="App_Start\NinjectWebCommon.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\Entities\CategoryController.cs" />
-    <Compile Include="Controllers\Entities\IngredientController.cs" />
-    <Compile Include="Controllers\Entities\ProductController.cs" />
-    <Compile Include="Controllers\Entities\RecipeController.cs" />
-    <Compile Include="Controllers\Entities\UnitMeasureController.cs" />
-    <Compile Include="Controllers\Entities\UserProductController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\Entities\UserController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

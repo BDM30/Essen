@@ -50,21 +50,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\ICommonRepository.cs" />
-    <Compile Include="Concrete\Repositories\UnitMeasureRepository.cs" />
     <Compile Include="Concrete\FoodContext.cs" />
-    <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
-    <Compile Include="Concrete\Repositories\IngredientRepository.cs" />
-    <Compile Include="Concrete\Repositories\RecipeRepository.cs" />
-    <Compile Include="Concrete\Repositories\ProductRepository.cs" />
-    <Compile Include="Concrete\Repositories\UserProductRepository.cs" />
-    <Compile Include="Concrete\Repositories\UserRepository.cs" />
-    <Compile Include="Entities\Category.cs" />
-    <Compile Include="Entities\Ingredient.cs" />
-    <Compile Include="Entities\Product.cs" />
-    <Compile Include="Entities\Recipe.cs" />
-    <Compile Include="Entities\UnitMeasure.cs" />
-    <Compile Include="Entities\User.cs" />
-    <Compile Include="Entities\UserProduct.cs" />
+    <Compile Include="Concrete\UserRepository.cs" />
+    <Compile Include="Concrete\Entities\Category.cs" />
+    <Compile Include="Concrete\Entities\Ingredient.cs" />
+    <Compile Include="Concrete\Entities\Product.cs" />
+    <Compile Include="Concrete\Entities\Recipe.cs" />
+    <Compile Include="Concrete\Entities\UnitMeasure.cs" />
+    <Compile Include="Concrete\Entities\User.cs" />
+    <Compile Include="Concrete\Entities\UserProduct.cs" />
     <Compile Include="Migrations\201510141946234_InitialCreate.cs" />
     <Compile Include="Migrations\201510141946234_InitialCreate.Designer.cs">
       <DependentUpon>201510141946234_InitialCreate.cs</DependentUpon>
