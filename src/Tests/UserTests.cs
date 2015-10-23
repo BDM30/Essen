@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Moq;
+using Xunit;
 
 // Facts are tests which are always true. They test invariant conditions.
 // Theories are tests which are only true for a particular set of data.
@@ -7,8 +8,14 @@
 
 namespace Tests
 {
-  public class Class1
+  public class UserTests
   {
+    [Fact]
+    public void can_get_data()
+    {
+      
+    }
+
     [Fact]
     public void PassingTest()
     {

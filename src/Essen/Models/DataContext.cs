@@ -4,6 +4,7 @@
  http://ef.readthedocs.org/en/latest/getting-started/aspnet5.html
  */
 
+using System.Collections.Generic;
 using Essen.Models.Entities;
 using Microsoft.Data.Entity;
 

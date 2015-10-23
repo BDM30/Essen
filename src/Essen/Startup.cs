@@ -1,4 +1,5 @@
 ﻿using Essen.Models;
+using Essen.Models.Entities;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Dnx.Runtime;
@@ -6,6 +7,10 @@ using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
 using Microsoft.Data.Entity;
+
+/*
+* Очень важный момент, DataContext мы можем передать только в конструкторе, если просто создать экземляр этого класса, ничего не выйдет.
+*/
 
 namespace Essen
 {
@@ -31,14 +36,14 @@ namespace Essen
         services.AddMvc();
 
         var connection = @"Server=(localdb)\mssqllocaldb;Database=EssenDB;Trusted_Connection=True;";
-        services.AddEntityFramework()
-          .AddSqlServer()
-          .AddDbContext<DataContext>(options => options.UseSqlServer(connection));
+        services.AddEntityFramework().AddSqlServer().AddDbContext<DataContext>(options => options.UseSqlServer(connection));
 
-        // Uncomment the following line to add Web API services which makes it easier to port Web API 2 controllers.
-        // You will also need to add the Microsoft.AspNet.Mvc.WebApiCompatShim package to the 'dependencies' section of project.json.
-        // services.AddWebApiConventions();
-      }
+        services.AddTransient<IRepository<User>, UserRepository>();
+
+      // Uncomment the following line to add Web API services which makes it easier to port Web API 2 controllers.
+      // You will also need to add the Microsoft.AspNet.Mvc.WebApiCompatShim package to the 'dependencies' section of project.json.
+      // services.AddWebApiConventions();
+    }
 
         // Configure is called after ConfigureServices is called.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)

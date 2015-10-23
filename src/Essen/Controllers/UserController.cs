@@ -12,14 +12,19 @@ using Microsoft.AspNet.Mvc;
 
 // guide to use postman
 
+
+/*
+
+*/
+
 namespace Essen.Controllers
 {
   [Route("api/[controller]")]
   public class UserController : Controller
   {
-    private DataContext data;
+    private IRepository<User> data;
 
-    public UserController(DataContext d)
+    public UserController(IRepository<User> d)
     {
       data = d;
     }
@@ -28,14 +33,14 @@ namespace Essen.Controllers
     [HttpGet]
     public IEnumerable<User> Get()
     {
-      return data.Users;
+      return data.Data;
     }
 
     // GET api/values/5
     [HttpGet("{id}")]
     public User Get(int id)
     {
-      return (from x in data.Users
+      return (from x in data.Data
               where x.UserID == id
               select x).FirstOrDefault();
     }
@@ -44,32 +49,21 @@ namespace Essen.Controllers
     [HttpPost]
     public void Post([FromBody] User user)
     {
-      data.Users.Add(user);
-      data.SaveChanges();
+      data.SaveData(user);
     }
 
     // PUT api/values/5
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] User user)
     {
-      if (user.UserID == 0)
-        user.UserID = id;
-      data.Users.Update(user);
-      data.SaveChanges();
+      data.SaveData(user);
     }
 
     // DELETE api/values/5
     [HttpDelete("{id}")]
     public void Delete(int id)
     {
-      User user = (from x in data.Users
-        where x.UserID == id
-        select x).FirstOrDefault();
-      if (user != null)
-      {
-        data.Users.Remove(user);
-        data.SaveChanges();
-      } 
+      data.DeleteData(id);
     }
 
   }
