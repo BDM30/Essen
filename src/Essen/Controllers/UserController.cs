@@ -56,6 +56,7 @@ namespace Essen.Controllers
     [HttpPut("{id}")]
     public void Put(int id, [FromBody] User user)
     {
+      user.UserID = id;
       data.SaveData(user);
     }
 
