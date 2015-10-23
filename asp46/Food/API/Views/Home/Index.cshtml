@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Описание API</h2>
+
+Есть сущности User, Product и тд. Они называются точно также как и таблицы в бд. <br>
+С ними можно совершать CRUD действия по средствам функций: <br>
+* all = получить все данные <br>
+* getby = получить все данные по параметру(ам) <br>
+* save = изменить или добавить новую запись (если указан id, то изменить , иначе новую). Здесь перечисляются все параметры. <br>
+* remove = удалить запись по id. <br>
+<br>
+Ответы на save и remove = "ok" <br>
+Ну и примеры: <br>
+http://essen.azurewebsites.net/User/getby?Name=Vlad <br>
+http://essen.azurewebsites.net/User/all <br>
+http://essen.azurewebsites.net/User/save?Name=P1 <br>
+http://essen.azurewebsites.net/User/remove?id=2 <br>
