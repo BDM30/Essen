@@ -1,6 +1,5 @@
 ﻿using Xunit;
 using Essen.Controllers;
-using Tests.CrudControllers;
 using Essen.Models.Entities;
 
 // Facts are tests which are always true. They test invariant conditions.
@@ -8,7 +7,7 @@ using Essen.Models.Entities;
 
 // https://xunit.github.io/docs/getting-started-dnx.html1
 
-namespace Tests
+namespace Tests.CrudControllers
 {
   public class UserTests
   {
@@ -28,36 +27,20 @@ namespace Tests
       Assert.AreEqual(3, result[2].UserID);
     }
 
-    [Fact]
-    public void PassingTest()
-    {
-      Assert.Equal(4, Add(2, 2));
-    }
+    //[Fact]
+    //public void can_get_data_one()
+    //{
+    //  // Arrange - create a controller with a mock repository
+    //  UserController target = new UserController(new UserRepositoryMock());
 
-    [Fact]
-    public void FailingTest()
-    {
-      Assert.Equal(5, Add(2, 2));
-    }
+    //  // Action
+    //  User result1 = target.Get(1); // true
+    //  User result2 = target.Get(144); // false
 
-    int Add(int x, int y)
-    {
-      return x + y;
-    }
-
-    [Theory]
-    [InlineData(3)]
-    [InlineData(5)]
-    [InlineData(6)]
-    public void MyFirstTheory(int value)
-    {
-      Assert.True(IsOdd(value));
-    }
-
-    bool IsOdd(int value)
-    {
-      return value % 2 == 1;
-    }
+    //  // Assert
+    //  Assert.AreEqual(null, result2);
+    //  Assert.AreEqual("Vlad", result1.Name);
+    //}
 
   }
 }
